@@ -10,6 +10,8 @@ if starting:
 	system.threadExecutionInterval = 1000 / 120
 	timepress = 0
 
+clock = time.clock()
+
 if keyboard.getPressed(Key.Space) is True:
 	vJoy[vJoyId].setPressed(0)
 
@@ -20,11 +22,11 @@ for i in range(13):
 		if joystick[vJoy_joyId].getDown(i): vJoy[vJoyId].setButton(i, False)
 
 if joystick[joyId].pov[0] != -1:
-	timepress = time.clock()
+	timepress = clock
 	if joystick[vJoy_joyId].pov != joystick[joyId].pov:
 		vJoy[vJoyId].setAnalogPov(0, joystick[joyId].pov[0])
 
-if (timepress > 0 and time.clock() > timepress + strumHoldPeriod):
+if (timepress > 0 and clock > timepress + strumHoldPeriod):
 	vJoy[vJoyId].setAnalogPov(0, -1)
 	timepress = 0
 
