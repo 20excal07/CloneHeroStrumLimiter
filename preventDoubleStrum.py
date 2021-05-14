@@ -12,7 +12,7 @@ if starting:
 if keyboard.getPressed(Key.Space) is True:
 	vJoy[vJoyId].setPressed(0)
 
-for i in range(14):
+for i in range(13):
 	vJoy[vJoyId].setButton(i, joystick[joyId].getDown(i))
 
 if joystick[joyId].pov[0] != -1:
