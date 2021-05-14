@@ -3,7 +3,7 @@ import time
 if starting:
 	strumHoldPeriod = 0.033333		#seconds (default: 1/30th of a second)
 	vJoyId = 0
-	vJoy_joyId = 0
+	vJoy_joyId = "vJoy Device"
 	joyId = 1
 	
 	system.setThreadTiming(TimingTypes.HighresSystemTimer)
