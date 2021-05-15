@@ -1,7 +1,7 @@
 import time
 
 if starting:
-	strumHoldPeriod = 0.033333		#seconds (default: 1/30th of a second)
+	strumHoldPeriod = 1/30.0		#seconds (default: 1/30th of a second)
 	vJoyId = 0
 	vJoy_joyId = "vJoy Device"
 	joyId = 1
