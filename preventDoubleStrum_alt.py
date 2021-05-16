@@ -26,7 +26,9 @@ if isDetecting:
 		timepress = 0
 		info = "Using guitar controller of ID "+str(joyId)+". Have fun!"
 		diagnostics.watch(info)
+		strums_blocked = 0
 else:
+	diagnostics.watch(strums_blocked)
 	clock = time.clock()
 	
 	if keyboard.getPressed(Key.Space) is True:
@@ -44,6 +46,8 @@ else:
 			if joystick[joyId].pov[0] != strumDir:
 				vJoy[vJoyId].setAnalogPov(0, joystick[joyId].pov[0])
 				strummed = True
+			else:
+				strums_blocked += 1
 			strumDir = joystick[joyId].pov[0]
 	
 	if (timepress > 0):
