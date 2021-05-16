@@ -9,6 +9,13 @@ if starting:
 	isDetecting = True
 	info = "Please strum on the guitar controller you would like to use."
 	diagnostics.watch(info)
+	
+	if vJoy[vJoyId].axisMax != -1:
+		vjAxisMax = vJoy[vJoyId].axisMax
+		vjAxisMin = -vJoy[vJoyId].axisMax
+	else:
+		vjAxisMax = 0x8000
+		vjAxisMin = 0
 
 if isDetecting:
 	for x in range(5):
@@ -46,6 +53,6 @@ else:
 		timepress = 0
 	
 	if joystick[joyId].z > 0:
-		vJoy[vJoyId].z = filters.mapRange(joystick[joyId].z,-1000,1000, 0,0x8000)
+		vJoy[vJoyId].z = filters.mapRange(joystick[joyId].z, -1000, 1000, vjAxisMin, vjAxisMax)
 	elif joystick[vJoy_joyId].z != joystick[joyId].z:
-		vJoy[vJoyId].z = filters.mapRange(joystick[joyId].z,-1000,1000, 0,0x8000)
+		vJoy[vJoyId].z = filters.mapRange(joystick[joyId].z, -1000, 1000, vjAxisMin, vjAxisMax)
