@@ -28,7 +28,6 @@ if isDetecting:
 		diagnostics.watch(info)
 		strums_blocked = 0
 else:
-	diagnostics.watch(strums_blocked)
 	clock = time.clock()
 	
 	if keyboard.getPressed(Key.Space) is True:
@@ -48,6 +47,7 @@ else:
 				strummed = True
 			else:
 				strums_blocked += 1
+				diagnostics.watch(strums_blocked)
 			strumDir = joystick[joyId].pov[0]
 	
 	if (timepress > 0):
