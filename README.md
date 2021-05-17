@@ -1,4 +1,4 @@
-# Strum limiter [FreePIE](https://andersmalmgren.github.io/FreePIE/) script for (mostly) Clone Hero
+# Strum limiter [FreePIE](https://andersmalmgren.github.io/FreePIE/) script for ᵐᵒˢᵗˡʸ Clone Hero
 
 [**Requires vJoy to be installed first.**](http://vjoystick.sourceforge.net/site/)
 
