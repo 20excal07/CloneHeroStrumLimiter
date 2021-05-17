@@ -4,7 +4,7 @@
 
 ***To register the vJoy controller in Clone Hero, simply start the script, then go and re-assign the primary controller in Clone Hero's "spacebar" controller settings screen. When it asks to press a button on a controller, press the Spacebar again to register the vJoy controller instead of the guitar itself.***
 
-*NOTE: You may not actually need this if you're playing any of the commercial Guitar Hero/Rock Band games (their PC versions/on an emulator), as those game already have a strum limiter built-in. However, if your copy of the game has the limiter patched out via modding, then this script may come in handy.*
+*NOTE: You may not actually need this if you're playing any of the commercial Guitar Hero/Rock Band games (their PC versions/on an emulator), as those games already have a strum limiter built-in. However, if your copy of the game has the limiter patched out via modding, then this script may come in handy.*
 
 ---
 
